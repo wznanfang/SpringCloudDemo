@@ -18,6 +18,7 @@ public class HelloController {
 
     @GetMapping("/hi")
     public String hi(@RequestParam(value = "name") String name) {
+        System.out.println("port:"+port);
         return "hello " + name + ", i'm provider ,my port:" + port;
 
     }

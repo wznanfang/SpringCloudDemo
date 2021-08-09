@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface HelloFeignClient {
 
     @GetMapping("/hi")
-    public String hi(@RequestParam(value = "name") String name);
+    String hi(@RequestParam(value = "name") String name);
 
 
 }

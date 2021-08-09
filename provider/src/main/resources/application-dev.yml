@@ -7,3 +7,7 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+        namespace: 0ee85244-9171-499c-9536-0337f01e5b3b
+        cluster-name: wzp
+        group: wzp
+        weight: 1

@@ -14,5 +14,8 @@ public interface HelloFeignClient {
     @GetMapping("/hi")
     String hi(@RequestParam(value = "name") String name);
 
+    @GetMapping("/hello")
+    String hello();
+
 
 }

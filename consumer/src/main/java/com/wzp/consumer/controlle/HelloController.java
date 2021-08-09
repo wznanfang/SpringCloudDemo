@@ -20,4 +20,9 @@ public class HelloController {
         return helloFeignClient.hi("feign");
     }
 
+    @GetMapping("/hello")
+    public String helloFeign(){
+        return helloFeignClient.hello();
+    }
+
 }

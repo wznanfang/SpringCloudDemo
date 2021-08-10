@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author zp.wei
  * @date 2021/8/9 10:38
  */
-@FeignClient(value = "provider" )
+@FeignClient(value = "provider")
 public interface HelloFeignClient {
 
     @GetMapping("/hi")

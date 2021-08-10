@@ -17,6 +17,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-cloud-alibaba.version>2020.0.RC1</spring-cloud-alibaba.version>
+        <spring-cloud-starter-openfeign.version>3.0.1</spring-cloud-starter-openfeign.version>
     </properties>
 
     <dependencies>
@@ -45,20 +47,20 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2020.0.RC1</version>
+            <version>${spring-cloud-alibaba.version}</version>
         </dependency>
 
         <!--引入openfeign，必须要引入loadbalancer，否则无法启动-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>3.0.1</version>
+            <version>${spring-cloud-starter-openfeign.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-            <version>3.0.1</version>
+            <version>${spring-cloud-starter-openfeign.version}</version>
         </dependency>
     </dependencies>
 
@@ -67,7 +69,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.4.9</version>
                 <configuration>
                     <excludes>
                         <exclude>
